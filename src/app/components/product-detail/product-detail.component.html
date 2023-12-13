@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="{{product?.productImage}}" alt="" class="img-fluid ">
+            </div>
+            <div class="col-sm-6">
+                <h6 class="card-title">{{product?.productTitle}}</h6>
+                <span class="badge badge-secondary">{{product?.productCategory?.categoryName}}</span>
+                <p>{{product?.productDescription}}</p>
+                <h2>{{product?.productPrice | currency:'INR'}}</h2>
+                <br>
+                <button class="btn btn-primary ">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>

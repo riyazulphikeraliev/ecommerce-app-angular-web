@@ -1,0 +1,15 @@
+<div class="container">
+    <h2 class="text-center">All Categories</h2>
+
+    <div class="row">
+        <div class="col-sm-4" *ngFor="let category of categories">
+          <div class="card\n">
+            <img *ngIf="category.categoryImage" src="{{category.categoryImage}}" alt="" class="card-img-top" height="250">
+            <!-- <img src="https://placehold.it/400/888888" alt="" class="card-img-top"> -->
+            <div class="card-body">
+              <h5 class="card-title">{{category.categoryName}}</h5>
+              <a href="#" class="btn btn-primary btn-block">Select</a>
+            </div>
+          </div>
+        </div>
+</div>
